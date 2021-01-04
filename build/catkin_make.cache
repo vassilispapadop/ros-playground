@@ -1,0 +1,2 @@
+ros_assignment
+-DCATKIN_DEVEL_PREFIX=/home/vassilispapadop/Desktop/ros-assignment/devel -DCMAKE_INSTALL_PREFIX=/home/vassilispapadop/Desktop/ros-assignment/install -G Unix Makefiles
