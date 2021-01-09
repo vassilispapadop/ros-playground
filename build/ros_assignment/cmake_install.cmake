@@ -53,10 +53,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ros_assignment" TYPE PROGRAM FILES "/home/vassilispapadop/Desktop/ros-assignment/build/ros_assignment/catkin_generated/installspace/talker.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ros_assignment" TYPE PROGRAM FILES "/home/vassilispapadop/Desktop/ros-assignment/build/ros_assignment/catkin_generated/installspace/turtle_distance.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ros_assignment" TYPE PROGRAM FILES "/home/vassilispapadop/Desktop/ros-assignment/build/ros_assignment/catkin_generated/installspace/listener.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ros_assignment" TYPE PROGRAM FILES "/home/vassilispapadop/Desktop/ros-assignment/build/ros_assignment/catkin_generated/installspace/test_publisher.py")
 endif()
 
