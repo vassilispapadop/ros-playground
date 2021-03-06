@@ -19,5 +19,6 @@ roslaunch robot_localization_demo robot_localization_demo.launch
     test
         positioning_system_node "-f 1.8 -x 0.2 -y 0.2 -t 0.2 -v"
         odometry_node "-f 10. -x 0.05 -X 0. -t 0. -T 0.02 -v"
+5)EKF frequency 20, 15
 
     

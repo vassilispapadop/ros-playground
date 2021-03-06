@@ -10,7 +10,7 @@
         args="-f 1. -x 0.2 -y 0.2 -t 0.2 -v" output="screen" />
   <!-- 'turtle odometry node', transforming the movements of the real turtle to a noisy measurement at a given frequency -->
   <node pkg="robot_localization_demo" type="odometry_node" name="turtle1_odometry_node"
-        args="-f 20. -x 0.1 -X 0. -t 0. -T 0.05 -v" output="screen" />
+        args="-f 20. -x 0.05 -X 0. -t 0. -T 0.02 -v" output="screen" />
 
   <!-- robot_localization EKF node for the odom frame -->
   <node pkg="robot_localization" type="ekf_localization_node" name="robot_localization_ekf_node_odom" clear_params="true">
