@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.20)  5 MAR 2021 12:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.20)  7 MAR 2021 15:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -325,35 +325,80 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
 
 (/Users/vpapadop/Library/TinyTeX/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [1{/Users/vpapadop/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.m
-ap}
+)
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+[]\T1/cmr/m/n/10 robot_localization_ekf_node_odom: Ex-
+ []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+[]\T1/cmr/m/n/10 robot_localization_ekf_node_map: Ex-
+ []
+
+
+Underfull \hbox (badness 3118) in paragraph at lines 44--45
+[]\T1/cmr/m/n/10 In or-der to point out the dif-fer-ences be-
+ []
+
+
+Underfull \hbox (badness 3612) in paragraph at lines 44--45
+\T1/cmr/m/n/10 tween robot_localization_ekf_node_odom and
+ []
+
+
+Underfull \hbox (badness 2096) in paragraph at lines 44--45
+\T1/cmr/m/n/10 robot_localization_ekf_node_map we need to
+ []
+
+
+Underfull \hbox (badness 4156) in paragraph at lines 44--45
+\T1/cmr/m/n/10 briefly de-scribe \T1/cmr/m/it/10 Kalman Fil-ter \T1/cmr/m/n/10 
+and \T1/cmr/m/it/10 ex-tended
+ []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 48--49
+\T1/cmr/m/n/10 moved the node with name \T1/cmr/m/it/10 teleop\T1/cmr/m/n/10 , 
+type \T1/cmr/m/it/10 tur-
+ []
+
+[1{/Users/vpapadop/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+}
 
 
 ]
-(./Robot Localization.aux)
+Overfull \hbox (20.06108pt too wide) in paragraph at lines 52--63
+ [][] 
+ []
+
+[2
+
+] (./Robot Localization.aux)
 Package rerunfilecheck Info: File `"Robot Localization".out' has not changed.
-(rerunfilecheck)             Checksum: F4E6795BF5C49E064450C08D3CB24F6F;218.
+(rerunfilecheck)             Checksum: E9E1499274DFAC81682AC1EC6A2E974A;294.
  ) 
 Here is how much of TeX's memory you used:
- 6208 strings out of 481252
- 92943 string characters out of 5914732
- 389274 words of memory out of 5000000
- 23028 multiletter control sequences out of 15000+600000
- 412912 words of font info for 52 fonts, out of 8000000 for 9000
+ 6229 strings out of 481252
+ 93158 string characters out of 5914732
+ 395305 words of memory out of 5000000
+ 23042 multiletter control sequences out of 15000+600000
+ 414946 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 71i,7n,74p,531b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
- </Users/vpapadop/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1
+ 71i,8n,74p,1184b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </Users/vpapadop/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1
 000.600pk> </Users/vpapadop/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/
-ec/ecrm1000.600pk> </Users/vpapadop/Library/TinyTeX/texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecbx1440.600pk> </Users/vpapadop/Library/TinyTeX/texmf-var/fonts/pk/
-ljfour/jknappen/ec/ectt1200.600pk> </Users/vpapadop/Library/TinyTeX/texmf-var/f
-onts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </Users/vpapadop/Library/TinyTeX/tex
-mf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk>
-Output written on "Robot Localization.pdf" (1 page, 54407 bytes).
+ec/ecti1000.600pk> </Users/vpapadop/Library/TinyTeX/texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecrm1000.600pk> </Users/vpapadop/Library/TinyTeX/texmf-var/fonts/pk/
+ljfour/jknappen/ec/ecbx1440.600pk> </Users/vpapadop/Library/TinyTeX/texmf-var/f
+onts/pk/ljfour/jknappen/ec/ectt1200.600pk> </Users/vpapadop/Library/TinyTeX/tex
+mf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </Users/vpapadop/Library/Tin
+yTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk></Users/vpapadop/Libr
+ary/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/vpapad
+op/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "Robot Localization.pdf" (2 pages, 82662 bytes).
 PDF statistics:
- 233 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 291 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
+ 57 words of extra memory for PDF output out of 10000 (max. 10000000)
 

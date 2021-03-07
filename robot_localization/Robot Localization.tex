@@ -29,12 +29,51 @@ Robot localization is a process to examine the exact position within its environ
 
 
 \section{Methods}
+
+The \textit{robot\textunderscore localization\textunderscore demo.launch} file consists of total 6 nodes.
+
+\begin{itemize}
+	\item turtlesim node: displays real turtle's measurements and estimated position
+	\item turtle1\textunderscore position\textunderscore system\textunderscore node: adds noise to the position of the turtle at a given frequency
+	\item turtle1\textunderscore odomentry\textunderscore node: adds noise to the movements of the turtle at a given frequency
+	\item robot\textunderscore localization\textunderscore ekf\textunderscore node\textunderscore odom: Extended Kalman Filter to odometry frame
+	\item robot\textunderscore localization\textunderscore ekf\textunderscore node\textunderscore map: Extended Kalman Filter to map frame
+	\item transformation\textunderscore visualiazation\textunderscore node: Visualization of estimated position in map frame
+\end{itemize}
+
+In order to point out the differences between robot\textunderscore localization\textunderscore ekf\textunderscore node\textunderscore odom and robot\textunderscore localization\textunderscore ekf\textunderscore node\textunderscore map we need to briefly describe \textit{Kalman Filter} and \textit{extended Kalman Filter}. Kalman Filter, is an iterative mathematical process that uses set of equations and consecutive data inputs to estimate values such as: position and velocity of an object when the measured values contain unpredicted or random error, uncertainty or variation. The Kalman Filter does not \textit{wait} for a bunch of input data to make an estimate(for example, average) instead, it makes a quick prediction/estimate from few data points by \textit{undestanding} the variation or the uncertainty in them. Generally, the input data are not the true value but something around the true value, Kalman Filter is a process of estimating the true value \textit{real time}. The extended version of the process, models the added noise as a non-linear function.
+
+Both EKF nodes are operating at the same frequency 10Hz which is the rate of producing a state estimate. Also, they have the same sensor\textunderscore timeout. The differences lie onto where the filter is making an estimate. In the first case, it estimates the odom frame while in second the map frame.
+
+To perform our experiments we made some preliminary changes to the original demo. At first step, we launched the robot\textunderscore localization \textunderscore robot package and recorded a \textit{rosbag} of approximately for 35 seconds passing the parameter \textit{-a} to capture all available topics. This recording is used for the carried experiements, which will be present in later sections. Then, we cloned the robot\textunderscore localization \textunderscore demo.launch file into {mylaunch.launch} and removed the node with name \textit{teleop}, type \textit{turtle\textunderscore teleop\textunderscore key} from package \textit{turtlesim} to prevent keyboard teleoperation. Within the newly created launch file, we added a new node from the package \textit{rosbag}, type \textit{play} and passed the path of the previous rosbag. Now, everytime we launch the \textit{mylaunch.launch} file the simulation immediatelly starts playing the rosbag file. We ran 5 different cases. This step is referred as \textit{baseline} in which we simply replay the rosbag mentioned above. The other four cases are presented in the table below.
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c c c|} 
+		\hline
+		& Parameters & Node  \\ [0.5ex] 
+		\hline\hline
+		Baseline & default parameters  & -  \\
+		Position Sensor Noise & $\alpha,\beta$  & $\beta,\alpha$  \\
+		Velocity Sensor Noise & $\alpha,\beta$  & $\beta,\alpha$  \\
+		Sensors Sampling Rate & $\alpha,\beta$  & $\beta,\alpha$  \\
+		EKF Frequency & $\alpha,\beta$ & $\delta,\epsilon$  \\ [1ex] 
+		\hline
+	\end{tabular}
+	\caption{Test cases \label{overflow}}
+\end{table}
 	
 \section{Results}
 
 \section{Discussion}
 
 \section{Example}
+
+
+\section{5.a}
+map-frame$\leftarrow$odom-frame$\leftarrow$base-link. Both \textit{map-frame} and \textit{odom-frame} are world fixed frames. Though, odometer will drift and accumulate error. To fix this we need to publish a map to odom transformation which will essentially fix the pose of the robot in the map frame.
+
+\section{5.b}
 
 \begin{thebibliography}{9}
 	\bibitem{moore} 
