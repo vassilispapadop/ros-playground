@@ -25,7 +25,7 @@
 \maketitle
 	
 \section{Introduction}
-Robot localization is a process to examine the exact position within its environment; Navigation is a crucial activity for a mobile robot for safety, operation and other reasons. A mobile robot needs to know not only its \textit{absolute} position but also its \textit{relative} position in respect, for example to a human who might interact with it. Navigation process requires 4 building blocks; \textit{Perception}, \textit{Localization}, \textit{Congition} and \textit{Motion Control}.
+Robot localization is a process to examine the exact position within its environment; Navigation is a crucial activity for a mobile robot for safety, operation and other reasons. A mobile robot needs to know not only its \textit{absolute} position but also its \textit{relative} position in respect, for example to a human who might interact with it. Navigation process requires 4 building blocks; \textit{Perception}, \textit{Localization}, \textit{Congition} and \textit{Motion Control}. On most common probabilistic technique, the extended Kalman filter can be used to combine information from sensors to compute an estimate of robot's location.
 
 
 \section{Methods}
@@ -116,15 +116,16 @@ In Figures 5 and 6 we tested the behaviour of the system when changing sensors s
 
 
 \section{5.a}
-map-frame$\leftarrow$odom-frame$\leftarrow$base-link. Both \textit{map-frame} and \textit{odom-frame} are world fixed frames. Though, odometer will drift and accumulate error. To fix this we need to publish a map to odom transformation which will essentially fix the pose of the robot in the map frame.
 
-\section{5.b}
+The coordinate frames structure is the following: 
+map-frame$\leftarrow$odom-frame$\leftarrow$base-link. Both \textit{map-frame} and \textit{odom-frame} are world fixed frames. Though, odometer will drift and accumulate error. This drift makes the odom frame useless as a long term global reference but useful for short term local reference. Furthermore, robot's pose is guaranted to be smooth since it is continuous. The map frame is not continuous, so the pose of the robot in the map frame can change in discrete jumps at any time. But, the pose will not suffer a significantly drift over time. So in order to fix the continuous drift in odom frame, we need to publish a map to odom transformation which will essentially fix the pose of the robot in the map frame.
 
 \begin{thebibliography}{9}
 	\bibitem{moore} 
 	Thomas Moore and Daniel Stouch. 
 	\textit{A Generalized Extended Kalman Filter Implementation for the Robot Operating System}. 
 	Sensor Processing and Networking Division Charles River Analytics, Inc. Cambridge, Massachusetts, USA.	
+	
 	
 \end{thebibliography}
 
