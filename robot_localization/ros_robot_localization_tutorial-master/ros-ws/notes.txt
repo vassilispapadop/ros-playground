@@ -3,3 +3,22 @@ source /opt/ros/noetic/setup.sh
 cd ~/Desktop/ros-assignment/robot_localization/ros_robot_localization_tutorial-master/ros-ws
 source devel/setup.sh
 roslaunch robot_localization_demo robot_localization_demo.launch
+
+
+<node pkg="rosbag" type="play" name="player" output="screen" args="--clock /home/vassilispapadop/Desktop/ros-assignment/turte/bagfiles/subset.bag"
+
+
+
+1)baseline "-f 1. -x 0.2 -y 0.2 -t 0.2 -v"
+2)position sensor noise "-"-f 1. -x 2.2 -y 2.2 -t 2.2 -v""
+3)velocity sensor noise "-f 20. -x 1.0 -X 0.5 -t 0.5 -T 0.5 -v"
+4)sensors sampling rate
+    default
+        positioning_system_node "-f 5. -x 0.2 -y 0.2 -t 0.2 -v"
+        odometry_node "-f 2. -x 0.05 -X 0. -t 0. -T 0.02 -v"
+    test
+        positioning_system_node "-f 1.8 -x 0.2 -y 0.2 -t 0.2 -v"
+        odometry_node "-f 10. -x 0.05 -X 0. -t 0. -T 0.02 -v"
+5)EKF frequency 20, 15
+
+    
