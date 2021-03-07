@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.20)  7 MAR 2021 15:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.20)  7 MAR 2021 20:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -256,7 +256,26 @@ x.def
 File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count273
 \l__pdf_internal_box=\box49
-) (./Robot Localization.aux)
+) (./Robot Localization.aux
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+)
 \openout1 = `"Robot Localization.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -367,24 +386,65 @@ type \T1/cmr/m/it/10 tur-
 
 
 ]
-Overfull \hbox (20.06108pt too wide) in paragraph at lines 52--63
+Overfull \hbox (11.42345pt too wide) in paragraph at lines 52--65
  [][] 
  []
 
-[2
+<./images//rqt_tf_tree.png, id=36, 495.8525pt x 417.56pt>
+File: ./images//rqt_tf_tree.png Graphic file (type png)
+<use ./images//rqt_tf_tree.png>
+Package pdftex.def Info: ./images//rqt_tf_tree.png  used on input line 71.
+(pdftex.def)             Requested size: 199.16928pt x 167.7219pt.
+<./images//baseline.png, id=38, 501.875pt x 502.87875pt>
+File: ./images//baseline.png Graphic file (type png)
+<use ./images//baseline.png>
+Package pdftex.def Info: ./images//baseline.png  used on input line 81.
+(pdftex.def)             Requested size: 199.16928pt x 199.56723pt.
+<./images//position_sensor_noise.png, id=39, 499.8675pt x 501.875pt>
+File: ./images//position_sensor_noise.png Graphic file (type png)
+<use ./images//position_sensor_noise.png>
+Package pdftex.def Info: ./images//position_sensor_noise.png  used on input lin
+e 89.
+(pdftex.def)             Requested size: 199.16928pt x 199.96532pt.
+<./images//velocity_sensor_noise.png, id=40, 500.87125pt x 498.86375pt>
+File: ./images//velocity_sensor_noise.png Graphic file (type png)
+<use ./images//velocity_sensor_noise.png>
+Package pdftex.def Info: ./images//velocity_sensor_noise.png  used on input lin
+e 97.
+(pdftex.def)             Requested size: 199.16928pt x 198.3697pt.
+<./images//sampling_rate.png, id=41, 501.875pt x 500.87125pt>
+File: ./images//sampling_rate.png Graphic file (type png)
+<use ./images//sampling_rate.png>
+Package pdftex.def Info: ./images//sampling_rate.png  used on input line 105.
+(pdftex.def)             Requested size: 199.16928pt x 198.77055pt.
+<./images//ekf_frequency.png, id=42, 499.8675pt x 501.875pt>
+File: ./images//ekf_frequency.png Graphic file (type png)
+<use ./images//ekf_frequency.png>
+Package pdftex.def Info: ./images//ekf_frequency.png  used on input line 111.
+(pdftex.def)             Requested size: 199.16928pt x 199.96532pt.
 
-] (./Robot Localization.aux)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./images//rqt_tf_tree.png> <./images//baseline.png> <./images//position_se
+nsor_noise.png>] [3 <./images//velocity_sensor_noise.png> <./images//sampling_r
+ate.png>]
+[4
+
+ <./images//ekf_frequency.png>] (./Robot Localization.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `"Robot Localization".out' has not changed.
-(rerunfilecheck)             Checksum: E9E1499274DFAC81682AC1EC6A2E974A;294.
+(rerunfilecheck)             Checksum: 49ABC47172ECE3CB625C22CE8B38BF5A;207.
  ) 
 Here is how much of TeX's memory you used:
- 6229 strings out of 481252
- 93158 string characters out of 5914732
- 395305 words of memory out of 5000000
- 23042 multiletter control sequences out of 15000+600000
+ 6278 strings out of 481252
+ 94392 string characters out of 5914732
+ 396366 words of memory out of 5000000
+ 23082 multiletter control sequences out of 15000+600000
  414946 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 71i,8n,74p,1184b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,7n,74p,1186b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/vpapadop/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1
 000.600pk> </Users/vpapadop/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/
 ec/ecti1000.600pk> </Users/vpapadop/Library/TinyTeX/texmf-var/fonts/pk/ljfour/j
@@ -393,12 +453,11 @@ ljfour/jknappen/ec/ecbx1440.600pk> </Users/vpapadop/Library/TinyTeX/texmf-var/f
 onts/pk/ljfour/jknappen/ec/ectt1200.600pk> </Users/vpapadop/Library/TinyTeX/tex
 mf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </Users/vpapadop/Library/Tin
 yTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk></Users/vpapadop/Libr
-ary/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/vpapad
-op/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "Robot Localization.pdf" (2 pages, 82662 bytes).
+ary/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "Robot Localization.pdf" (4 pages, 183986 bytes).
 PDF statistics:
- 291 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 303 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
